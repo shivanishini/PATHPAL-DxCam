@@ -1,97 +1,148 @@
-<div align="center">PathPAL DxCam – Digital Microscopy Application
-A digital microscopy application developed to connect microscope-based image acquisition with a structured digital workflow for viewing, capturing, and organizing microscopic images.
-</div>Project showcase: This repository documents the application through screenshots and project information only. It does not contain the proprietary source code or executable.
+<div align="center">
 
-📌 Project Overview
-PathPAL DxCam is a desktop application developed to support digital microscopy workflows. It provides an interface for connecting to a camera stream, viewing microscopic samples, capturing high-resolution images, and organizing images by case.
+# 🔬 PathPAL DxCam
+### Digital Microscopy Application
 
-The application is part of a broader PathPAL ecosystem that is intended to bring together microscope camera hardware and a web-based platform. The planned deployment and web experience are associated with the official PathPAL website:
+**A desktop-based digital microscopy solution for image acquisition, visualization, and case management.**
 
-Website: https://www.pathpal.in/
-
-The website identifies the PathPAL platform as a pathology-focused AI copilot. The hardware and web-platform rollout should be understood as the broader product direction; this repository's screenshots document the PathPAL DxCam desktop interface.
-🔗 System Concept: IoT Camera and Web Application
-The broader system is intended to connect an IoT-enabled Raspberry Pi camera (PiCam) attached to a microscope with the PathPAL DxCam web application.
-
-At a high level, the intended workflow is:
-1. Microscope imaging: The Raspberry Pi camera captures microscopic samples through the microscope.
-2. Camera connectivity: The camera device makes its image stream available over the configured network connection.
-3. Application interface: The PathPAL DxCam application is designed to connect to the camera stream using configurable connection details, such as a camera host and port.
-4. Image acquisition: Users can view the live microscopic feed and capture images for a case.
-5. Web-platform direction: The broader PathPAL platform is intended to provide the web-facing experience for the connected hardware and associated digital workflow through pathpal.in.
-The exact production architecture, deployment status, and availability of each hardware-to-web integration component may evolve as the platform is brought live. The screenshots in this repository demonstrate the desktop application's visible interface and features; they should not be taken as proof that every planned web or hardware deployment component is already publicly operational.
-✨ Key Features
-- Live Microscope Preview: View a live microscopic camera feed within the application when a camera stream is connected.
-- Camera Connection Settings: Configure the camera host and port used by the application.
-- Connection Status: Display connected and disconnected states in the interface.
-- High-Resolution Image Capture: Capture and save microscopic images from the live preview.
-- Fullscreen Preview: View the microscopic image in a larger, distraction-reduced preview.
-- Case-Based Image Organization: Associate captured images with a case identifier.
-- Image Gallery: Review captured image thumbnails through the gallery strip.
-- AI Workflow Entry Point: The interface includes an option to upload images for an AI report workflow. The availability and maturity of AI analysis depend on the associated service and deployment.
-🖥️ Application Screenshots
-The following screenshots are from the PathPAL DxCam desktop application.
-1. Main Application Interface
-The main screen brings together the case identifier, connection status, image count, preview area, and primary application actions.
-
-2. Live Camera Preview
-Example of the application displaying a connected camera feed and captured-image information.
-
-3. Fullscreen Microscopy Preview
-A fullscreen view for inspecting a microscopic sample during image review or capture.
-
-4. Camera Connection Settings
-The settings interface provides fields for the camera host and port used to connect to the camera stream.
-
-5. Disconnected State
-The application interface when a camera stream is not currently connected.
-
-6. Gallery Strip
-A view of the image thumbnail strip used to access captured images associated with the current workflow.
-
-7. About PathPAL DxCam
-The application's About dialog with its version information and listed capabilities.
-
-🛠️ Technology Stack
-Area	Technology
-Programming language	Python
-Desktop UI framework	PySide6
-Image processing and camera handling	OpenCV
-Camera hardware direction	Raspberry Pi Camera (PiCam)
-Application packaging	PyInstaller
-Target desktop platforms	Windows and macOS
-Broader product platform	PathPAL website
-
-
-👩‍💻 Development Contributions
-During the internship, I contributed to the development of the PathPAL DxCam desktop application, including:
-- Developing the desktop user interface using Python and PySide6.
-- Implementing the camera connection settings and connection-status interface.
-- Working on live camera preview and microscopic image display.
-- Implementing image capture and fullscreen preview workflows.
-- Developing case-oriented image organization and gallery functionality.
-- Working on packaging and cross-platform application support.
-- Contributing to the application workflow intended to fit into the wider IoT-enabled PathPAL ecosystem.
-📋 Project Information
-- Project: PathPAL DxCam
-- Project type: Internship software development project
-- Application category: Digital microscopy desktop application
-- Hardware direction: IoT-enabled Raspberry Pi camera connected to a microscope
-- Web platform: https://www.pathpal.in/
-- Focus areas: Desktop application development, camera integration, image acquisition, and digital workflow management
-📁 Repository Scope
-This repository is a visual and technical project showcase. It contains selected application screenshots and descriptive documentation only.
-
-It intentionally does not include:
-- Proprietary application source code
-- Compiled application binaries or installers
-- Private configuration files, credentials, or API keys
-- Patient information or confidential company data
-⚖️ Intellectual Property Notice
-PathPAL DxCam was developed as part of an internship, and the project and its associated intellectual property are owned by the respective organization. This repository is intended only to describe and showcase the work, subject to the organization's permission to publish the included screenshots and project details.
-
-All product names, platform assets, software, and related intellectual property remain the property of their respective owners. No license or permission to copy, modify, distribute, or commercially use the application is granted by this showcase repository.
-<div align="center">Project showcase only — no source code or executable is distributed here.
 </div>
 
+---
+
+## 📌 Project Overview
+
+**PathPAL DxCam** is a cross-platform digital microscopy desktop application developed to bridge traditional microscope viewing with digital image acquisition and management.
+
+The application enables users to view live microscope images, capture high-resolution images, and organize captured images according to individual patient cases.
+
+It is designed as part of a broader digital pathology ecosystem integrating microscope imaging, IoT-enabled camera hardware, and web-based application capabilities.
+
+🌐 **Official Website:** https://www.pathpal.in/
+
+The website represents the broader PathPAL platform, while the screenshots in this repository showcase the desktop application's interface and functionality.
+
+---
+
+## 🔗 System Concept: IoT Camera and Web Application
+
+PathPAL DxCam is designed to work within an ecosystem connecting an IoT-enabled Raspberry Pi camera attached to a microscope with the PathPAL web application.
+
+The intended workflow includes:
+
+1. **Microscope Imaging:** A microscope is used to observe biological samples.
+2. **Camera Integration:** An IoT-enabled Raspberry Pi camera captures the microscope's visual output.
+3. **Application Connectivity:** The desktop application connects to the camera using configurable host and port settings.
+4. **Live Visualization:** Users can view the live microscope feed through the application.
+5. **Image Acquisition:** High-resolution images can be captured and organized into individual cases.
+6. **Web Platform Direction:** The broader PathPAL ecosystem is intended to support digital record management and AI-assisted pathology workflows.
+
+*Note: The production architecture and deployment of the broader ecosystem may evolve. This repository showcases the desktop application and does not claim that every planned integration is currently operational.*
+
+---
+
+## ✨ Key Features
+
+- **Live Camera Preview:** View real-time microscope images through the application.
+- **Camera Connection Settings:** Configure host and port details for camera connectivity.
+- **Connection Status:** Monitor whether the camera is connected or disconnected.
+- **High-Resolution Image Capture:** Capture microscope images for digital documentation.
+- **Fullscreen Preview:** View microscope images in an expanded display mode.
+- **Case-Based Organization:** Organize captured images according to individual patient cases.
+- **Image Gallery:** Access and review previously captured images.
+- **AI Workflow Entry Point:** Provides an interface direction for future AI-assisted analysis and reporting workflows.
+
+---
+
+## 🖥️ Application Screenshots
+
+### 1. Main Application Interface
+![Main Interface](screenshots/main-interface-1.png)
+
+### 2. Camera Connection Settings
+![Connection Host](screenshots/connection-host.png)
+
+### 3. Disconnected Mode
+![Disconnected Mode](screenshots/disconnected-mode.png)
+
+### 4. Live Camera Preview
+![Live Camera Preview](screenshots/live-camera-preview.png)
+
+### 5. Fullscreen Image Preview
+![Fullscreen Preview](screenshots/fullscreen-preview.png)
+
+### 6. Gallery Strip
+![Gallery Strip](screenshots/gallerystrip-disconnected-mode.png)
+
+### 7. About Application
+![About](screenshots/About.png)
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| Python | Core application development |
+| PySide6 | Desktop application interface |
+| OpenCV | Camera integration and image processing |
+| Raspberry Pi Camera | Microscope image acquisition hardware |
+| PyInstaller | Application packaging and distribution |
+| Windows & macOS | Cross-platform desktop support |
+
+---
+
+## 👩‍💻 Development Contributions
+
+During my internship, I contributed to the development of PathPAL DxCam, focusing on:
+
+- Designing and developing the desktop application's user interface.
+- Implementing camera connection settings and connectivity handling.
+- Integrating live camera preview functionality.
+- Developing high-resolution image capture and fullscreen preview features.
+- Implementing case-based image organization and gallery management.
+- Working on application packaging and cross-platform compatibility for Windows and macOS.
+- Contributing to the desktop application component of the broader IoT-enabled digital microscopy ecosystem.
+
+---
+
+## 📋 Project Information
+
+| Category | Details |
+|---|---|
+| Project Name | PathPAL DxCam |
+| Project Type | Internship Project |
+| Application | Digital Microscopy Desktop Software |
+| Hardware Integration | Raspberry Pi Camera |
+| Platforms | Windows & macOS |
+| Project Focus | Digital Imaging, Image Management, IoT Integration |
+
+---
+
+## 📁 Repository Scope
+
+This repository is intended as a **project showcase and documentation repository**.
+
+It contains application screenshots and a high-level overview of the project's features, technologies, and intended system workflow.
+
+It does not distribute proprietary source code, executable binaries, internal configuration files, or confidential patient-related information.
+
+---
+
+## ⚖️ Intellectual Property Notice
+
+PathPAL DxCam was developed during an internship at **PathAssist MedTech Pvt. Ltd.**
+
+The project and its associated intellectual property belong to the company and/or their respective owners.
+
+This repository is maintained solely for portfolio and demonstration purposes, subject to applicable company permissions. No ownership or license to the original software or intellectual property is claimed or granted through this repository.
+
+---
+
+<div align="center">
+
+**Project Showcase Only — No Source Code or Executable Is Distributed Here.**
 **Developed as part of a Software Development Internship.**
+
+</div>
+
+
